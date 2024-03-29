@@ -5,11 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Application3</title>
     <style>
+.theme-icon{
+    height: 90px;
+    width: 90px;
+    cursor: pointer;
+}
+.active{
+    border-radius: 5px;
 
-        
+}
+.theme-dark{
+background-color: black;
+color: white;
+}
+.theme-light{
+background-color: white;
+color: black;
+}
     </style>
 </head>
-<body>
-    <div>hello</div>
+<body id="body">
+    <div>
+ <img src="./images/dark.png" class="theme-icon active" 
+ id="btn-dark" onclick="darkmode()"/>
+ <img src="./images/light.png" class="theme-icon unactive" 
+ id="btn-light" onclick="lightmpde()"/>
+
+    </div>
+    <script>
+   function darkmode(){
+     const imgdark = document.getElementById('btn-dark');
+       imgdark.classList.add('active');
+        const imglight = document.getElementById('btn-light');
+       imglight.classList.remove('active');
+       const bodyElement=document.getElementById("body");
+       bodyElement.className="theme-dark";
+       
+   }
+  function lightmpde{
+     const imgdark = document.getElementById('btn-dark');
+      imgdark.classList.remove('active');
+      const imglight = document.getElementById('btn-light');
+       imglight.classList.add('active');
+       const bodyElement = document.getElementById("body");
+      bodyElement.className = "theme-light";
+    
+  }
+    </script>
 </body>
 </html>
