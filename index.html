@@ -14,11 +14,11 @@
     border-radius: 5px;
 
 }
-.theme-dark{
+.btn-dark{
 background-color: black;
 color: white;
 }
-.theme-light{
+.btn-light{
 background-color: white;
 color: black;
 }
@@ -26,11 +26,17 @@ color: black;
 </head>
 <body id="body">
     <div>
- <img src="./images/dark.png" class="theme-icon active" 
- id="btn-dark" onclick="darkmode()"/>
- <img src="./images/light.png" class="theme-icon unactive" 
- id="btn-light" onclick="lightmpde()"/>
+ <img src="./images/dark.png"
+  class="theme-icon active" 
+ id="btn-dark"
+  onclick="darkmode()"/>
 
+ <img src="./images/light.png" 
+ class="theme-icon " 
+ id="btn-light"
+  onclick="lightmpde()"/>
+
+  <p>this is switcher</p>
     </div>
     <script>
    function darkmode(){
