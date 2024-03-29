@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Application3</title>
     <style>
+        .body-switch{
+            background-color: rgb(237, 235, 231);
+        }
 .theme-icon{
-    height: 90px;
-    width: 90px;
+    height: 130px;
+    width: 130px;
     cursor: pointer;
-}
-.active{
-    border-radius: 5px;
-
+    display: block;
+     padding: 0px 23px;
+            border: none;
+            margin:15px 29px;
+   
 }
 .theme-dark{
 background-color: black;
@@ -22,22 +26,24 @@ color: white;
 .theme-light{
 background-color: white;
 color: black;
+
 }
     </style>
 </head>
-<body id="body">
-    <div>
+<body class="body-switch" id="body">
+
+    <div >
  <img src="./images/dark.png"
   class="theme-icon active" 
  id="btn-dark"
   onclick="darkmode()"/>
 
  <img src="./images/light.png" 
- class="theme-icon " 
+ class="theme-icon unactive " 
  id="btn-light"
   onclick="lightmode()"/>
 
-  <p>this is switcher</p>
+  <h1>This is Dark/Light Theme Switch</h1>
     </div>
     <script>
    function darkmode(){
