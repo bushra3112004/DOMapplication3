@@ -6,16 +6,19 @@
     <title>DOM Application3</title>
     <style>
         .body-switch{
-            background-color: white
+            background-color: rgb(247, 225, 225);
         }
         
 .theme-icon{
-    height: 110px;
-    width: 110px;
+    height: 90px;
+    width: 90px;
     cursor: pointer;
     display: block;
      padding: 0px 23px;
-    
+}
+.theme-icon:hover{
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+;
 }
 
 .theme-dark{
@@ -23,7 +26,7 @@ background-color: black;
 color: white;
 }
 .theme-light{
-background-color:rgb(249, 248, 247);;
+background-color:white;
 color: black;
 }
     </style>
@@ -31,7 +34,7 @@ color: black;
 <body class="body-switch" id="body">
     
         <div >
- <img src="./images/dark1.png"
+ <img src="./images/dark3.png"
   class="theme-icon active" 
  id="btn-dark"
   onclick="darkmode()"/>
