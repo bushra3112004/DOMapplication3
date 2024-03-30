@@ -6,49 +6,46 @@
     <title>DOM Application3</title>
     <style>
         .body-switch{
-            background-color: rgb(237, 235, 231);
+            background-color: white
         }
+        
 .theme-icon{
-    height: 130px;
-    width: 130px;
+    height: 110px;
+    width: 110px;
     cursor: pointer;
     display: block;
      padding: 0px 23px;
-            border: none;
-            margin:15px 29px;
-   
+    
 }
+
 .theme-dark{
 background-color: black;
 color: white;
-
 }
 .theme-light{
-background-color: white;
+background-color:rgb(249, 248, 247);;
 color: black;
-
 }
     </style>
 </head>
 <body class="body-switch" id="body">
-
-    <div >
+    
+        <div >
  <img src="./images/dark.png"
   class="theme-icon active" 
  id="btn-dark"
   onclick="darkmode()"/>
 
- <img src="./images/light.png" 
+  <img src="./images/light.png" 
  class="theme-icon unactive " 
  id="btn-light"
   onclick="lightmode()"/>
-
+  
   <h1>This is Dark/Light Theme Switch</h1>
   <p>Dark Mode advocates argue that it's easier on the eyes and 
-    can contribute to better sleep patterns by reducing exposure
-to blue light.
- On the flip side, Light Mode proponents contend that their preferred mode offers superior readability and
-less visual fatigue in bright environments.</p>
+    can contribute to better sleep patterns by reducing exposureto blue light.<br/>
+    On the flip side, Light Mode proponents contend that their preferred mode offers
+   superior readability andless visual fatigue in bright environments.</p>
     </div>
     <script>
    function darkmode(){
